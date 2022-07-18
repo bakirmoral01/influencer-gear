@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Poppins:wght@500&display=swap');
+
+/* common style  */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/* banner style  */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text {
+    width: 100%;
+    padding: 50px;
+
+}
+
+.banner-text h2 {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.banner-text-button {
+    display: flex;
+}
+
+.button-link {
+    text-decoration: none;
+    color: white;
+    background-color: #E02C6D;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.button-link i {
+    margin-left: 10px;
+}
+
+/* banner section style end    */
+
+/* logo section style start  */
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+hr {
+    background-color: #C0CCDA;
+}
+
+.collection-title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 28px;
+    color: #3A3A3A;
+
+}
+
+
+.collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+
+.collection {
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 5px 5px #EEEEEE;
+    border-radius: 5px;
+    padding: 25px;
+
+}
+
+.collection-text>h3 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.collection-text>p {
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.collection-details p,
+span {
+    font-family: 'Inter', sans-serif;
+    color: #787885;
+    font-size: 14px;
+    font-weight: 700;
+
+
+}
+
+.filled {
+    color: #FB8200;
+    font-size: 14px;
+}
+
+/* media quiries  */
+
+@media only screen and (max-width: 577px) {
+    main {
+        width: 100%;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .banner-text {
+        padding: 0px;
+        text-align: center;
+    }
+
+    .banner-main-image {
+        width: 90%;
+    }
+
+    .banner-text h2 {
+        font-size: 40px;
+    }
+
+
+
+
+
+    .populer-collection,
+    .logos {
+        display: none;
+    }
+}
