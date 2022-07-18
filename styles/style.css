@@ -121,6 +121,8 @@ span {
         width: 100%;
     }
 
+
+
     .banner {
         display: flex;
         flex-direction: column-reverse;
@@ -139,12 +141,24 @@ span {
         font-size: 40px;
     }
 
+    hr {
+        display: none;
+    }
 
-
-
-
-    .populer-collection,
     .logos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0px;
+        justify-items: center;
+        margin-top: 50px;
+    }
+
+    .logo img {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .populer-collection {
         display: none;
     }
 }
