@@ -11,6 +11,45 @@ main {
     margin: 0 auto;
 }
 
+/* header style start*/
+
+Header {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    margin-top: 30px;
+}
+
+.navbar-logo {
+    width: 50%;
+}
+
+.navbar {
+    width: 50%;
+    margin-left: 24%;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar li {
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+
+.navbar li a {
+    text-decoration: none;
+    color: #3A3A3A;
+
+}
+
+
 /* banner style  */
 .banner {
     display: flex;
@@ -20,8 +59,7 @@ main {
 
 .banner-text {
     width: 100%;
-    padding: 50px;
-
+    padding: 50px 0px;
 }
 
 .banner-text h2 {
@@ -31,6 +69,17 @@ main {
 
 .banner-img {
     width: 100%;
+    position: relative;
+    left: 10%;
+    z-index: 1;
+}
+
+.banner-main-image {}
+
+.banner-cricle {
+    position: absolute;
+    right: 8%;
+    z-index: 0;
 }
 
 .banner-text-button {
